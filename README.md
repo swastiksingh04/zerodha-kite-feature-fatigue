@@ -43,6 +43,8 @@ zerodha-kite-feature-fatigue/
 │
 └── README.md
 ```
+
+---
 ## 🔍 Methodology Overview
 
 ### 1. Data Collection
@@ -113,3 +115,4 @@ It does not use internal data and does not represent the views or decisions of Z
 ---
 
 ⭐ If you find this project useful, consider starring the repository.
+
