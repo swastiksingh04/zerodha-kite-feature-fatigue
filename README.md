@@ -20,7 +20,7 @@ To quantify this behavior, a composite metric called the **Feature Fatigue Index
 ---
 
 ## 🗂️ Repository Structure
-
+```text
 zerodha-kite-feature-fatigue/
 │
 ├── data/
@@ -41,7 +41,7 @@ zerodha-kite-feature-fatigue/
 │   └── Zerodha_Kite_Feature_Fatigue_Case_Study.pdf
 │
 └── README.md
-
+```
 ---
 ## 🔍 Methodology Overview
 
@@ -113,5 +113,6 @@ It does not use internal data and does not represent the views or decisions of Z
 ---
 
 ⭐ If you find this project useful, consider starring the repository.
+
 
 
