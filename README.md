@@ -1,118 +1,68 @@
-# 📊 Zerodha Kite – Feature Fatigue Analysis
+# 📊 Zerodha Kite – User Feedback & Feature Fatigue Analysis  
 
-A data-driven case study analyzing **feature fatigue patterns** in the Zerodha Kite trading platform using user reviews, topic modeling, sentiment analysis, and a custom **Feature Fatigue Index (FFI)**.
-
-This project studies how increasing feature additions can sometimes lead to **user overwhelm**, even when engagement remains high.
+Analyzed 1,000+ user reviews of the Zerodha Kite platform to identify **key user pain points, sentiment trends, and feature overload patterns** using Python and NLP techniques.
 
 ---
 
-## 🧠 Project Objective
+## 🎯 Business Problem  
 
-Modern digital products evolve rapidly with frequent feature releases. While this improves capability, it can also create unintended complexity for users.
+Modern apps continuously add features, but more features ≠ better experience.  
 
-This project aims to:
-- Identify which feature areas dominate user discussions
-- Track how sentiment around these areas changes over time
-- Detect early signals of **feature fatigue**, where attention rises but sentiment weakens
-
-To quantify this behavior, a composite metric called the **Feature Fatigue Index (FFI)** is proposed.
+This project answers:  
+👉 *Are new features improving user satisfaction or creating complexity?*  
 
 ---
 
-## 🗂️ Repository Structure
-```text
-zerodha-kite-feature-fatigue/
-│
-├── data/
-│   ├── raw/               # Original Google Play Store reviews
-│   └── processed/         # Cleaned datasets, topic outputs, FFI tables
-│
-├── notebooks/
-│   ├── 01_data_collection.ipynb
-│   ├── 02_text_cleaning.ipynb
-│   ├── 03_topic_modeling.ipynb
-│   ├── 04_topic_velocity_analysis.ipynb
-│   ├── 05_sentiment_trends_by_topic.ipynb
-│   └── 06_feature_fatigue_index.ipynb
-│
-├── visuals/               # Generated plots and charts
-│
-├── report/
-│   └── Zerodha_Kite_Feature_Fatigue_Case_Study.pdf
-│
-└── README.md
-```
----
-## 🔍 Methodology Overview
+## 🧠 What I Did  
 
-### 1. Data Collection
-- User reviews collected from the **Google Play Store**
-- Dataset size: **1,000+ reviews**
-
-### 2. Topic Discovery
-- Text vectorization using **TF-IDF**
-- Topic modeling using **Latent Dirichlet Allocation (LDA)**
-- Identified **6 dominant discussion topics**
-
-### 3. Topic Velocity
-- Measured monthly share of reviews per topic
-- Used as a proxy for **user attention intensity**
-
-### 4. Sentiment Analysis
-- Applied **VADER sentiment analysis**
-- Computed average sentiment trends per topic
-
-### 5. Feature Fatigue Index (FFI)
-- Composite score combining:
-  - Normalized topic velocity
-  - Normalized sentiment decay
-- Higher FFI indicates **high attention with weaker sentiment**
+- Collected and cleaned 1,000+ user reviews from Google Play Store  
+- Identified major discussion themes using topic modeling  
+- Tracked how user sentiment changes across feature areas over time  
+- Built a **Feature Fatigue Index (FFI)** to detect areas with high attention but declining satisfaction  
 
 ---
 
-## 📈 Key Outputs
-- 📊 Topic Velocity Over Time  
-- 📉 Sentiment Trends Across Topics  
-- 📌 Feature Fatigue Index (FFI) by Topic  
-- 📄 Reader-friendly PDF case study report  
+## 📈 Key Insights  
 
-All visuals are available in the `visuals/` folder.
+- A few feature areas dominate user discussions, indicating high user focus  
+- Some features show **increasing attention but declining sentiment** → early sign of frustration  
+- Not all feature additions improve experience — some increase complexity  
 
 ---
 
-## 📌 Key Insight (High Level)
+## 💡 Business Impact  
 
-A small subset of feature areas receives **disproportionately high user attention**, but this attention is not always accompanied by positive sentiment.  
-This gap highlights areas where additional features may be increasing complexity rather than improving user satisfaction.
+- Helps product teams identify **which features need simplification or redesign**  
+- Enables **data-driven product decisions** instead of assumption-based updates  
+- Highlights early warning signals before user dissatisfaction grows  
 
 ---
 
-## 📄 Case Study Report
+## 🛠 Tools Used  
 
-A detailed, non-technical case study is available here:
+Python, Pandas, NLP, Topic Modeling, Sentiment Analysis, Matplotlib  
 
+---
+
+## 📄 Detailed Case Study  
+
+A full report with visuals and explanations is available:  
 📘 `reports/Zerodha_Kite_Feature_Fatigue_Case_Study.pdf`
 
-The report is written for both **technical and non-technical audiences**.
+---
+
+## ⚠️ Disclaimer  
+
+This is an independent project based on publicly available data and does not represent Zerodha.
 
 ---
 
-## ⚠️ Disclaimer
-
-This is an **independent analytical project** based on publicly available user reviews.  
-It does not use internal data and does not represent the views or decisions of Zerodha.
-
----
-
-## 👤 Author
+## 👤 Author  
 
 **Swastik Singh**  
 - GitHub: https://github.com/swastiksingh04  
-- LinkedIn: https://www.linkedin.com/in/swastik-singh-821464275/
+- LinkedIn: https://www.linkedin.com/in/swastik-singh-821464275/  
 
 ---
 
-⭐ If you find this project useful, consider starring the repository.
-
-
-
+⭐ If you found this useful, consider starring the repo!
